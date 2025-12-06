@@ -1,20 +1,23 @@
 package demo.Shift_Managar.controller;
 
-import demo.Shift_Managar.dto.LoginRequest;
-import demo.Shift_Managar.dto.RegisterRequest;
-import demo.Shift_Managar.dto.UserDTO;
-import demo.Shift_Managar.model.User;
-import demo.Shift_Managar.model.UserRole;
-import demo.Shift_Managar.service.UserService;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import demo.Shift_Managar.dto.LoginRequest;
+import demo.Shift_Managar.dto.RegisterRequest;
+import demo.Shift_Managar.model.User;
+import demo.Shift_Managar.model.UserRole;
+import demo.Shift_Managar.service.UserService;
 
 @RestController
 @RequestMapping("/auth")
